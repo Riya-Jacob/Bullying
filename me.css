@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sacramento&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+nav{
+    height: 20px;
+    background-color: black;
+    padding: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(188, 220, 240);
+}
+
+header{
+    height: 200px;
+    padding: 80px;
+    background-image: url("https://cdn140.picsart.com/353925920016201.jpg?type=webp&to=min&r=640");
+}
+
+h2, h1{
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 3em;
+}
+
+.font{
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+}
+
+#section{
+    background-image: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=733&q=80");
+    padding: 80px;
+}
+
+#content-holder{
+    padding: 75px;
+    display: inherit;
+    background-color: lightblue;
+    border-radius: 40px;
+}
+
+.text-color{
+    color: darkblue;
+    margin: 20px;
+}
+
+.inline{
+    display: inline;
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+    margin: 30px;
+    justify-content: space-around;
+    border-radius: 30px;
+}
+
+footer{
+    background-color: black;
+    color: ghostwhite;
+    padding: 20px;
+}
+
+#button{
+    background-image: url("https://images.unsplash.com/photo-1531169509526-f8f1fdaa4a67?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#button:hover{
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove{
+    from{
+        background-image: url('https://images.unsplash.com/photo-1537237858032-3ad1b513cbcc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    }
+    to{
+        background-image: url('https://images.unsplash.com/photo-1556139930-c23fa4a4f934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    nav{
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    .inline{
+        height: 10px;
+        flex-wrap: wrap;
+        margin-top: 1px;
+        margin-bottom: 0%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    a{
+        height: 10px;
+    }
+    
+    #section{
+        padding: 20px;
+    }
+    
+    #content-holder{
+        padding: 10px;
+    }
+
+    .font{
+        font-size: 30px;
+    }
+    
+    h1{
+        margin: 30px;
+    }
+
+    header{
+        padding: 20px;
+        height: 320px;
+    }
+
+}
